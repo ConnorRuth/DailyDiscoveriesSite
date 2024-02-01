@@ -11,28 +11,36 @@
 
 <body>
     <h1>Welcome to the Daily Discoveries random advice generator...</h1>
-    <img src = "./assets/imgs/advice icon.jpg" alt="Advice Icon" style="width:200px;height:250px;">
-        <h2>Enter your name below and <br> click submit for random advice. <p> You never know what might happen!</p></h2>
-
-    <form>
-        <div class="Name">
-        <!-- Name field here for user to enter their name as the first step of random advice generation -->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        <!-- Submit button here, this will be the action to generate random advice -->
-        <input type="submit" value="Generate Advice">
-        </div>
-    </form>
-       
+    <hr>
+    <img src = "./assets/imgs/advice icon.jpg" alt="Advice Icon" style="width:200px;height:250px;position: ;">
+        <h2>Looking for some fun random advice? <br> Click on the Generate More Advice button below to continue getting random advice.<br>
+   
+        <p> You never know what might happen!</p></h2>
     
+        <hr>
+   
+<!-- Advice shows here, when a user clicks the Generate More Advice button, the API will continue to generate random advice -->
+    <h2>
+        <div class="container">
+
+         <div id="results"></div>
+   
+         <button class="btn" id="getData">Generate More Advice</button>
+         
+         </div>
+       <hr>
+    </h2>
+
     <footer>
-        <!-- Link back to Daily Discoveries home page -->
+<!-- Link back to Daily Discoveries home page and reference to API used -->
         <br>
-        <a id="home" class="home" href:="./index.html">Daily Discoveries Homepage</a>                                                                                         
-      </footer>
+        <a id="home" class="home" href:="./index.html">Daily Discoveries Homepage</a>  
+    </footer>
+    <footer>This page was made using the Advice Slip API - https://publicapis.io/advice-slip-api"</footer>
+
+<!-- link to advice js file -->
+      <script src="./assets/js/advise.js"></script>
 
 </body>
-
-<script src="./assets/js/advise.js"></script>
 
 </html>
