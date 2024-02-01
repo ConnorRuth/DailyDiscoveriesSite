@@ -4,33 +4,38 @@ body,
 .wrapper {
   height: 100%;
   margin: 0;
-  padding: 0;
+  
 }
 
 body {
     background-color: lightyellow;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 
 header{
     height: 90px;
     width: 100%;
     background-color: lightyellow;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 header{
-    
+   
     border-bottom: 10px solid lightpink;
 }
 
+
 h1 {
+    padding: 3rem;
     font-size: 6rem;
     color: lightpink;
     
 }
 
 h2 {
+    padding: 3rem;
     font-size: 4rem;
     color: rgb(246, 126, 146);
 }
@@ -41,12 +46,12 @@ a {
     padding: 6rem;
     color: rgb(133, 209, 234);
     text-decoration: none;
+  
 }
 
 section {
     margin: 0 auto;
     width: 500px;
-    padding: 5rem;
     border: 5px solid lightpink;
     border-radius: 20px;
 }
@@ -58,4 +63,12 @@ button {
      padding: 20px;
     font-size: 20px;
     color: rgb(244, 82, 109);
+}
+
+footer {
+    height: 90px;
+    width: 100%;
+    background-color: lightpink;
+    color: white;
+    margin: 0%;
 }
