@@ -14,18 +14,18 @@
         </nav>
     </header>
     <h1>Astrology</h1>
-<ul>
-    <input id="userName" class="userName" type="text" placeholder="Name">
-    <button id="nameBtn" class="nameBtn">
-        Enter
-     </button>
+<form id="horoForm">
+    <label for="sign">Zodiac Sign:</label>
+  <input  id="sign" class="sign" type="text" name="sign">
 
-     <input id="userBirth" class="userBirth" type="text" placeholder="Birthday">
-     <button id="birthBtn" class="birthBtn">
-        Enter
-      </button>
-
-</ul>
+  <label for="day">Day:</label>
+  <select id="day" class="day" name="day">
+    <option value="today">Today</option>
+    <option value="tomorrow">Tomorrow</option>
+    <option value="yesterday">Yesterday</option>
+  </select>
+  <button id="submitBtn" type="submit">Enter</button>
+</form>
 
 <h2 class="Horoscope">Horoscope</h2>
 <article id="artHoro" class="artHoro"></article>
@@ -33,6 +33,8 @@
 
  <footer>
     <a id="home" class="home" href="index.html">Homepage</a>
- </footer>   
+ </footer> 
+ <script type="text/javascript" src="./assets/js/script.js">
+</script>
 </body>
 </html>
