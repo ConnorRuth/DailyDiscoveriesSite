@@ -1,0 +1,101 @@
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  
+}
+
+body {
+    background-color: rgb(255, 229, 233);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    height: 125px;
+    width: 100%;
+    background-color:rgb(214, 196, 255);
+    padding-top: 1rem;
+}
+
+header{
+    border-bottom: 10px solid rgb(137, 92, 234);
+   
+}
+
+h1 {
+    padding: 3rem;
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0px 0px 30px pink,0px 0px 30px pink,0px 0px 30px pink,0px 0px 10px rgb(254, 93, 225),0px 0px 10px rgb(254, 93, 225);
+    font-family: 'Gabriola', sans-serif;
+                                                
+}
+
+h2 {
+    padding: 3rem;
+    font-size: 4rem;
+    color: rgb(246, 126, 146);
+}
+
+
+
+
+nav a:hover {
+    text-shadow: 0px 0px 30px #fff5b6,0px 0px 30px #fff5b6,0px 0px 30px #fff5b6,0px 0px 10px #fff5b6,0px 0px 10px #fff5b6;
+   color: white;
+   
+}
+
+a {
+    font-size: 3rem;
+    margin: 6rem;
+    padding: 6rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+    
+                                                
+    
+}
+
+section {
+    margin: 0 auto;
+    width: 500px;
+    border: 5px solid lightpink;
+    border-radius: 20px;
+}
+
+button {
+     background-color: pink;
+     border: none;
+     border-radius: 20px;
+     padding: 20px;
+    font-size: 20px;
+    
+}
+
+footer {
+    height: 90px;
+    width: 100%;
+    background-color: lightpink;
+    color: white;
+    margin: 0%;
+}
+
+p {
+    font-size: 30px;
+    color: rgb(244, 82, 109);
+    font-size: 40px;
+  
+  
+}
+
+img {
+    width: 20%;
+    padding-top: 50px;
+    
+}
