@@ -93,7 +93,7 @@ footer {
     color: white;
     margin: 0%;
     position:fixed; /* change*/
-    bottom:0; /* change*/
+    bottom:5px; /* change*/
 }
 
 p {
