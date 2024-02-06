@@ -26,8 +26,16 @@ header{
    
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+    margin-top: -200px;
+    height: 500px;
+    width: 150px;
+}
+
 h1 {
-    padding: 3rem;
+    padding: 1rem;
     font-size: 7rem;
     color: white;
     text-shadow: 0px 0px 30px pink,0px 0px 30px pink,0px 0px 30px pink,0px 0px 10px rgb(254, 93, 225),0px 0px 10px rgb(254, 93, 225);

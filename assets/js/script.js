@@ -1,33 +1,22 @@
-var sign = document.getElementById('sign');
-var day = document.getElementById('day');
-var submitBtn = document.getElementById('submitBtn');
+var userInput = document.getElementById("fortune");
+var userForm = document.getElementById("fortForm");
+var submitBtn = document.getElementById("submitBtn");
+var displayFort = document.getElementById("artFort");
 
-console.log("event listener attached");
-
-submitBtn.addEventListener("click", function(event) {
+userForm.addEventListener("submit", function(event){
   event.preventDefault();
-  
-  var zodiacSign = sign.value;
-  
-  var apiUrl = `/${zodiacSign}`;
-  
-  fetch(apiUrl)
-  .then(function(response) {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.text(); // Handle response as text
+
+  var fortune = userInput.ariaValueMax
+
+  fetch("https://eightballapi.com/api" + fortune)
+  .then(function(response){
+    return response.json();
   })
-  .then(function(data) {
-    try {
-      var horoscope = JSON.parse(data).description;
-      document.getElementById("artHoro").textContent = horoscope;
-      document.getElementById("artHoro").style.display = "block";
-    } catch (error) {
-      console.log('Error parsing JSON:', error);
-    }
+  .then(function(data){
+    displayFort.textContent = data.magic.answer;
   })
-  .catch(function(error) {
-    console.log(error);
-  });
-});
+  .catch(function(error){
+    console.log("an error has occurred", error)
+  })
+  userInput.value = "";
+})
