@@ -26,8 +26,16 @@ header{
    
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+    margin-top: -200px;
+    height: 500px;
+    width: 150px;
+}
+
 h1 {
-    padding: 3rem;
+    padding: 1rem;
     font-size: 7rem;
     color: white;
     text-shadow: 0px 0px 30px pink,0px 0px 30px pink,0px 0px 30px pink,0px 0px 10px rgb(254, 93, 225),0px 0px 10px rgb(254, 93, 225);
@@ -53,7 +61,7 @@ nav a:hover {
 a {
     font-size: 3rem;
     margin: 6rem;
-    padding: 6rem;
+    padding: 3rem;
     color: rgb(255, 255, 255);
     text-decoration: none;
     
@@ -85,7 +93,7 @@ footer {
     color: white;
     margin: 0%;
     position:fixed; /* change*/
-    bottom:0; /* change*/
+    bottom:5px; /* change*/
 }
 
 p {
@@ -98,6 +106,26 @@ p {
 
 img {
     width: 20%;
-    padding-top: 50px;
+    
     
 }
+
+#cottoncandyback {
+    height: 900px;
+    width: 100%;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+   }
+ 
+  #text {
+    z-index: 100;
+    position: absolute;
+    color: rgb(32, 16, 102);
+    font-size: 45px;
+    font-weight: bold;
+    left: 35px;
+    top: 350px;
+  }
+
+
