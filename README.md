@@ -9,13 +9,14 @@ Upon entering the homepage you will notice Tarot in the top left and advice in t
 ## Installation
 N/A
 
-## Refrences
+## References
 https://www.w3schools.com/
+https://api.adviceslip.com/
 https://stackoverflow.com/
 
 ## Credits
-Connor, Ruthven.
-Tulsi, Fraley.
-Nathaniel, "Nate" Sanow.
-Jenifer, Torres.
-Gavin, Todd.
+Connor, Ruthven
+Tulsi, Fraley
+Nathaniel, "Nate" Sanow
+Jenifer, Torres
+Gavin, Todd
