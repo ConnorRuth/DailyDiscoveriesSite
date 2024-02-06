@@ -64,7 +64,7 @@ a {
 
 section {
     margin: 0 auto;
-    width: 500px;
+    /* width: 500px; */ /*commented out width */
     border: 5px solid lightpink;
     border-radius: 20px;
 }
@@ -79,11 +79,13 @@ button {
 }
 
 footer {
-    height: 90px;
+    height: 10vh; /* change*/
     width: 100%;
     background-color: lightpink;
     color: white;
     margin: 0%;
+    position:fixed; /* change*/
+    bottom:0; /* change*/
 }
 
 p {
