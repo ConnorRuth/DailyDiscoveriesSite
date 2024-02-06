@@ -17,10 +17,10 @@ function drawCard(event) {
         for(let i=0;i<data.cards.length;i++){
             htmlCard += `
             <div class="flip-card">
+                <h3>${data.cards[i].name}</h3>
+                <h6>${data.cards[i].type}</h6>
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <h1>${data.cards[i].name}</h1>
-                <h6>${data.cards[i].type}</h6>
                           </div>
               <div class="flip-card-back">
                 <h4>Meaning Upright:</h4>
