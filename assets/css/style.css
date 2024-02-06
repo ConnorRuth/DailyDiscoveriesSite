@@ -29,9 +29,9 @@ header{
 nav{
     display: flex;
     flex-direction: row;
-    margin-top: -200px;
-    height: 500px;
-    width: 150px;
+    margin-top: -125px;
+    height: 550px;
+    width: 350px;
 }
 
 h1 {
