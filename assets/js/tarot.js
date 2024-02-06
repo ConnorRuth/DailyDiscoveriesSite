@@ -1,4 +1,3 @@
-var name = document.querySelector("name");
 var drawCardNumber = document.querySelector("reading");
 var drawBtn = document.querySelector("#shuffleBtn");
 var TarotImg = [{shortname: "pe10", tarotImage: "./assets/imgs/Tarot/TenofPentacles.jpg"},{shortname: "pe09", tarotImage: "./assets/imgs/Tarot/NineofPentacles.jpg"}, {shortname: "pe08", tarotImage: "./assets/imgs/Tarot/EightofPentacles.jpg"},
@@ -37,13 +36,13 @@ function drawCard(event) {
                 <h3>${data.cards[i].name}</h3>
             <div class="flip-card-inner">
               <div class="flip-card-front">
-              <img src="${tarotDisplay.tarotImage}">
+              <img class="cardImg" src="${tarotDisplay.tarotImage}">
                           </div>
               <div class="flip-card-back">
                 <h4>Meaning Upright:</h4>
-                <p>${data.cards[i].meaning_up}</p>
+                <p class="cardText">${data.cards[i].meaning_up}</p>
                 <h4>Meaning Reversed:</h4>
-                <p>${data.cards[i].meaning_rev}</p>             
+                <p class="cardText">${data.cards[i].meaning_rev}</p>             
               </div>
             </div>
           </div>`
