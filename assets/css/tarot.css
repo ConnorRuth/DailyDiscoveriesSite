@@ -1,0 +1,88 @@
+/* The flip card container*/
+.flip-card {
+    background-color: transparent;
+    width: 40%;
+    height:75vh;
+    margin:1%;
+    padding: 50px;
+    perspective: 1000px; 
+  }
+  
+  /* Front and back side container */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Front and back side position */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style of the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style on the back side */
+  .flip-card-back {
+    background-color: rgb(70, 86, 102);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  #display-card{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 80px;
+  }
+
+  .flip-card-back p{
+    font-size: 1.20rem;
+    text-wrap: wrap;
+  }
+
+  img {
+    width: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main {
+    padding-top: 20px;
+ }
+
+
+ h3 {
+    color: black;
+    text-shadow: 0px 0px 30px pink,0px 0px 30px pink,0px 0px 30px pink,0px 0px 10px rgb(254, 93, 225),0px 0px 10px rgb(254, 93, 225);
+    font-family: 'Gabriola', sans-serif;
+    font-size: 3rem;
+}
+
+ h6 {
+    color: white;
+    text-shadow: 0px 0px 30px pink,0px 0px 30px pink,0px 0px 30px pink,0px 0px 10px rgb(254, 93, 225),0px 0px 10px rgb(254, 93, 225);
+    font-family: 'Gabriola', sans-serif;
+    font-size: 2rem;
+  } 
+
+  h6::first-letter {
+    text-transform: capitalize;
+}
+  
