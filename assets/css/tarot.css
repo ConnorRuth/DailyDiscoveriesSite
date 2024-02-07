@@ -26,7 +26,6 @@
   /* Front and back side position */
   .flip-card-front, .flip-card-back {
     position: absolute;
-    width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
@@ -35,12 +34,15 @@
   
   /* Style of the front side (fallback if image is missing) */
   .flip-card-front {
+    align-self: center;
+    width: 50%;
     background-color: #bbb;
     color: black;
   }
   
   /* Style on the back side */
   .flip-card-back {
+    width: 100%;
     background-color: rgb(70, 86, 102);
     color: white;
     transform: rotateY(180deg);
@@ -54,7 +56,7 @@
   }
 
   .flip-card-back p{
-    font-size: 1.20rem;
+    font-size: .5rem;
     text-wrap: wrap;
   }
 
@@ -89,4 +91,8 @@ main {
   h6::first-letter {
     text-transform: capitalize;
 }
-  
+.cardImg {
+ padding-top: 2%;
+ height: 98%;
+ width: 96%;
+}
